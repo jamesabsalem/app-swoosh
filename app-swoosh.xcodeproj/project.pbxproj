@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		30877E272285F58D009EF3BF /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30877E262285F58D009EF3BF /* BorderButton.swift */; };
 		30C07C5C2285EBC100E227E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07C5B2285EBC100E227E5 /* AppDelegate.swift */; };
-		30C07C5E2285EBC100E227E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07C5D2285EBC100E227E5 /* ViewController.swift */; };
+		30C07C5E2285EBC100E227E5 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C07C5D2285EBC100E227E5 /* WelcomeVC.swift */; };
 		30C07C612285EBC100E227E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C07C5F2285EBC100E227E5 /* Main.storyboard */; };
 		30C07C632285EBC300E227E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C07C622285EBC300E227E5 /* Assets.xcassets */; };
 		30C07C662285EBC300E227E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C07C642285EBC300E227E5 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		30877E262285F58D009EF3BF /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		30C07C582285EBC100E227E5 /* app-swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C07C5B2285EBC100E227E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30C07C5D2285EBC100E227E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30C07C5D2285EBC100E227E5 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		30C07C602285EBC100E227E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30C07C622285EBC300E227E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C07C652285EBC300E227E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,12 +37,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30877E252285F50D009EF3BF /* Views */ = {
+		3038C826228C8B1B00570A63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				30C07C5D2285EBC100E227E5 /* WelcomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3038C827228C8B3100570A63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30877E252285F50D009EF3BF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				30877E262285F58D009EF3BF /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		30C07C4F2285EBC100E227E5 = {
@@ -64,9 +79,10 @@
 		30C07C5A2285EBC100E227E5 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
-				30877E252285F50D009EF3BF /* Views */,
+				3038C827228C8B3100570A63 /* Model */,
+				3038C826228C8B1B00570A63 /* Controller */,
+				30877E252285F50D009EF3BF /* View */,
 				30C07C5B2285EBC100E227E5 /* AppDelegate.swift */,
-				30C07C5D2285EBC100E227E5 /* ViewController.swift */,
 				30C07C5F2285EBC100E227E5 /* Main.storyboard */,
 				30C07C622285EBC300E227E5 /* Assets.xcassets */,
 				30C07C642285EBC300E227E5 /* LaunchScreen.storyboard */,
@@ -146,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C07C5E2285EBC100E227E5 /* ViewController.swift in Sources */,
+				30C07C5E2285EBC100E227E5 /* WelcomeVC.swift in Sources */,
 				30C07C5C2285EBC100E227E5 /* AppDelegate.swift in Sources */,
 				30877E272285F58D009EF3BF /* BorderButton.swift in Sources */,
 			);
